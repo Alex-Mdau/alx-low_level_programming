@@ -1,2 +1,1 @@
-This program prints the alphabet in lowercase followed by a new line
-exceot 'q' and 'e'.
+This program prints all single digit numbers of base 10 starting from 0.
