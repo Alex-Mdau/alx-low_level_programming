@@ -1,1 +1,1 @@
-a function that checks for lowercase character..
+this is a C- Functions, nested loops project
