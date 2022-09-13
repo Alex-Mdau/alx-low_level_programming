@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Detremine if the input is greater than , less than or equal to 0
+ * print_sign - Det if the input is greater than , less than or equal to 0
  *
  * @n: The input number as an integer
  *
