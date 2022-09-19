@@ -4,7 +4,7 @@
 /**
  * print_array - prints an array
  * @a: integer
- * @b: integer
+ * @n: integer
  *
  * Return: void
  */
@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d", a[i]);
 
-		if ( i == n - 1)
+		if (i == n - 1)
 			continue;
 		printf(", ");
 	}
