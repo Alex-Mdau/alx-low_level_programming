@@ -2,35 +2,43 @@
 
 /**
  * template - check for word separators
- * @c: character
- * Return: 1 True 0 False
- */
-
-int template(char c)
-{
-	if (c == ',' || c == ';' || c == '.' || c == '!' || c == '?' || c == '"' || c == '(' || c == ')' || c == '{' || c = = '}' || c == ' ' || c == '\t' || c == '\n')
-		return (1);
-	return (0);
-}
-
-/**
- * cap_string - capitalize each word
- * @s: word string
+ * @n: input value
  *
  * Return: string
  */
-char *cap_string(char *s)
+char *cap_string(char *n)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\0')
+	i = 0;
+	if (n[0] >= 'a' && n[0] <= 'z')
 	{
-		if ((s[i] >= 'a' && s[i] <= 'z') && i == 0)
-			s[i] = s[i] - 'a' + 'A';
-
-		if ((s[i] >= 'a' && s[i] <= 'z') && template(s[i - 1]))
-			s[i] = s[i] - 'a' + 'A';
-		i++;
+		n[0] = n[0] - 32;
 	}
-	return (s);
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		switch (n[i])
+		{
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
+				if (n[i + 1] > 96 && n[i + 1] < 123)
+				{
+					n[i + 1] = n[i + 1] - 32;
+				}
+		}
+	}
+	return (n);
 }
+				
+	
