@@ -2,6 +2,7 @@
 
 /**
  * template - check for word separators
+ * cap_string - capitalize each word
  * @n: input value
  *
  * Return: string
@@ -39,6 +40,4 @@ char *cap_string(char *n)
 		}
 	}
 	return (n);
-}
-				
-	
+}	
