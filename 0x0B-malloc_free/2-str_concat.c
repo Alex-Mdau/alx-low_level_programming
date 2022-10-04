@@ -8,33 +8,25 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *strDup;
+	char *new_str;
+	int i, len, _len;
 
-	int i, j;
-
-	if (s1 == NULL)
+	if (!s1)
 		s1 = "";
-	if (s2 == NULL)
+
+	if (!s2)
 		s2 = "";
-	i = j = 0;
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
-		j++;
-	strDup = malloc(sizeof(char) * (i + j + 1));
-	if (strDup == NULL)
+
+	len = strlen(s1);
+	_len = strlen(s2);
+
+	new_str = malloc(sizeof(char) * (len + _len + 1));
+
+	if (!new_str)
 		return (NULL);
-	i = j = 0;
-	while (s1[i] != '\0')
-	{
-		strDup[i] = s1[i];
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		strDup[j] = s2[j];
-		j++;
-	}
-	strDup[i] = '\0';
-	return (strDup);
+
+	for (i = 0; i <= len + _len; i++)
+		new_str[i] = i < len ? s1[i] : s2[i - len];
+
+	return (new_str);
 }
