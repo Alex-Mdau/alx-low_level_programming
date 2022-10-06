@@ -2,7 +2,8 @@
 
 /**
  * malloc_checked - this allocates memory using malloc
- * @b: size to be allocated
+ * @b: size of the memory to allocate
+ *
  * Return: void
  */
 
