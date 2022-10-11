@@ -1,9 +1,9 @@
 #include "dog.h"
 
 /**
- * free_dog - this frees all dogs
- * @d: the pointer to a dog of type dog_t
- * Return : Nothing
+ * free_dog - this frees dogs
+ * @d: a pointer to a dog of type dog_t
+ * Return: Nothing
  */
 
 void free_dog(dog_t *d)

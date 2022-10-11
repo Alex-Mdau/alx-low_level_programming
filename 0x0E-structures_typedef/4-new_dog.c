@@ -2,10 +2,10 @@
 
 /**
  * new_dog - this creates a new dog
- * @name: the pointer to a char for the name of the dog
- * @owner: the pointer to a char for the owner of the dog
- * @age: age of the dog
- * Return: the Pointer to a new dog of type dog_t
+ * @name: pointer to a char for the name of dog
+ * @age: the age of the dog
+ * @owner: pointer to a char for the name of dog
+ * Return: Pointer to a new dog of type dog_t
  */
 
 dog_t *new_dog(char *name, float age, char *owner)

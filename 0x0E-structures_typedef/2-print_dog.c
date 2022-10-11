@@ -2,7 +2,7 @@
 
 /**
  * print_dog - this prints a struct dog
- * @d: the pointer to an element of type dog
+ * @d: a pointer to an element of type dog
  * Return: Nothing
  */
 
