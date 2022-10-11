@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * struct - this defines a new struct dog with name,age and owner
+ * struct dog - this defines a new struct dog with name,age and owner
  * @name: first member
  * @age: second member
  * @owner: third member
