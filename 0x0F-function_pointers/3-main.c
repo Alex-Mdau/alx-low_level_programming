@@ -14,8 +14,8 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		ERR_NUM;
 		ERR_OUT;
+		ERR_NUM;
 	}
 
 	a = atoi(argv[1]);
