@@ -26,6 +26,7 @@ int (*get_op_func(char *s))(int, int)
 
 		i++;
 	}
+
 	ERR_OUT;
 	ERR_OPP;
 }
